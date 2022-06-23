@@ -26,3 +26,4 @@ ENV AWS_REGION=ap-southeast-1
 
 COPY --from=builder /usr/src/java-code/build/libs/*.jar ./app.jar
 ENTRYPOINT ["java","-jar","app.jar"] 
+# https://stackoverflow.com/questions/58593661/slow-gradle-build-in-docker-caching-gradle-build
